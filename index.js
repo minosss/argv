@@ -31,7 +31,8 @@ export default function parser(args) {
 			if (isNumberLike(value)) {
 				const num = Number.parseFloat(value);
 				// if parse fails, fallback
-				result[camelKey] = Number.isNaN(num) ? value : num;
+				const fail = Number.isNaN(num) || (num + '').length !== value.length;
+				result[camelKey] = fail ? value : num;
 			} else {
 				// exists
 				if (result[camelKey] !== undefined && result[camelKey] !== true) {
