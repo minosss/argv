@@ -1,4 +1,4 @@
-# argv
+# argv [![v](https://img.shields.io/npm/v/@yme/argv?color=5755d9&label=)](https://www.npmjs.com/package/@yme/argv)
 
 **tips**
 
